@@ -15,7 +15,7 @@ import warnings
 import random
 from .Hyperexponential_dist import Hyperexp
 
-class WeatherGenerator():
+class Rain_WeatherGenerator():
     """
     Class to generate stochastically daily rainfall 
     Attributes: 
