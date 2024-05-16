@@ -5,6 +5,7 @@
 """
 from scipy.stats import rv_continuous
 import numpy as np
+from scipy.optimize import minimize
 
 class Hyperexp(rv_continuous):
     """
