@@ -1,6 +1,11 @@
 # WEATHER GENERATOR 
 ```
-To update
+from weather_generator import Rain_WeatherGenerator
+
+rain_WG = Rain_WeatherGenerator()
+rain_WG.import_data(data_list= rain_data, start_date= "1991-01-01", end_date= "2020-12-31")
+daily_rain_generated = rain_WG.run_weath_gen(2024, month=02, nb_real=100, rain_occ_model= "mixed_order", rain_quant_model= "gamma"):
+
 ```
 
 Stochastic generation of daily weather data. 
@@ -9,7 +14,7 @@ Stochastic generation of daily weather data.
 This package is a stochatic weather generator, that create daily weather data. For now, the method work for rainfall data.
 
 The data needed for the calculation are:
-* historical daily weather data for at least 30 years.
+* historical daily weather data that should be for at least 30 years.
 
 
 For daily rainfall generation, different method (type of model) are avalaible from which the users can choose: 
