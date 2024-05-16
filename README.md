@@ -11,16 +11,20 @@ daily_rain_generated = rain_WG.run_weath_gen(2024, month=02, nb_real=100, rain_o
 Stochastic generation of daily weather data. 
 
 # About
-This package is a stochatic weather generator, that create daily weather data. For now, the method work for rainfall data.
+Generate stochastic daily weather data using this Python package. 
+Simulate realistic weather conditions for various locations, based on the climatology. 
+Useful for data analysis, modeling, and simulation in fields such as meteorology, climate science, agriculture, and urban planning.
+lease note that currently, the method specifically focuses on rainfall data generation. 
+Weather generators for other parameters are in development for future updates.
 
-The data needed for the calculation are:
-* historical daily weather data that should be for at least 30 years.
-
-
-For daily rainfall generation, different method (type of model) are avalaible from which the users can choose: 
-* rain occurrence model:  one order markov chain, second order markov chain, mixed order markov chain
-* daily rain quantity model:  weibull, exponential, gamma, hyperexponential (sum of 2 exponential distribution)
+The data needed for the calculation include historical daily weather data, covering at least 30 years
 The input data must have the same timestep and length.
+
+For daily rainfall generation, users can choose from different methods (types of models):
+* Rain Occurrence Model: Choose between first order Markov chain, second order Markov chain, or mixed order Markov chain.
+* Daily Rain Quantity Model: Choose from Weibull, exponential, gamma, or hyperexponential (sum of two exponential distributions).
+
+It's important to note that the input data must have the same timestep and length
 
 # Install
 ```
